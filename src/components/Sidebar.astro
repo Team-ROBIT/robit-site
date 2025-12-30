@@ -23,7 +23,7 @@ const menuItems = groups.map(group => {
         .sort((a, b) => (a.data.order || 0) - (b.data.order || 0)) // order 순으로 정렬
         .map(doc => ({
         name: doc.data.title,
-        href: `/${doc.slug}` // 예: /contest/awards-2025
+        href: `/robit-site/${doc.slug}` // 예: /contest/awards-2025
         }));
 
     return {
