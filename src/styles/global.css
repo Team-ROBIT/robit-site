@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@layer base {
+    :root {
+        --font-pretendard: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    }
+
+    body {
+        font-family: var(--font-pretendard);
+        @apply antialiased tracking-tight text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-950;
+    }
+}
+
+/* 추가 커스텀: 마크다운 내의 이미지나 코드 블록 스타일 조정 */
+.prose {
+    @apply max-w-none;
+}

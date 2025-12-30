@@ -1,11 +1,53 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// src/pages/index.astro
+import DocsLayout from '../layouts/DocsLayout.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<DocsLayout title="Welcome to ROːBIT Archive" isDocs={false}>
+	<section class="relative py-16 px-8 mb-16 overflow-hidden rounded-[2rem] bg-gradient-to-br from-zinc-900 via-zinc-800 to-black text-white shadow-2xl">
+		<div class="relative z-10">
+		<h2 class="text-4xl md:text-6xl font-black mb-6 leading-[1.1]">
+			Korea's First, <br/>
+			<span class="text-blue-500">Global Leader in Robotics.</span>
+			<!-- 슬로건은 재민이형이 말해주는 내용으로 수정 필요. 지금은 임의로 추가함.-->
+		</h2>
+		<p class="text-zinc-400 max-w-xl mb-10 text-lg leading-relaxed">
+			광운대학교 로봇게임단 로빛의 20여 년간의 기술 자산과 대회 기록을 체계적으로 보존하는 공식 아카이브입니다.
+		</p>
+		<div class="flex flex-wrap gap-4">
+			<a href="/overview/welcome" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105">
+			시작하기
+			</a>
+			<a href="https://github.com/team-robit" target="_blank" class="bg-zinc-800/50 backdrop-blur-md border border-zinc-700 hover:bg-zinc-700 px-8 py-4 rounded-full font-bold transition-all">
+			GitHub 저장소
+			</a>
+		</div>
+		</div>
+	</section>
+
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+		<a href="/robots/robot-list" class="group p-8 border border-zinc-200 dark:border-zinc-800 rounded-3xl hover:border-blue-500/50 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-all">
+		<div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">🤖</div>
+		<h3 class="font-bold text-xl mb-3">Our Robots</h3>
+		<p class="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">
+			로빛의 역대 레스큐, 재난 대응 로봇들의 사양과 설계 문서를 확인하세요.
+		</p>
+		</a>
+
+		<a href="/contest/awards" class="group p-8 border border-zinc-200 dark:border-zinc-800 rounded-3xl hover:border-orange-500/50 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-all">
+		<div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">🏆</div>
+		<h3 class="font-bold text-xl mb-3">Achievements</h3>
+		<p class="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">
+			국내외 로봇 대회 수상 실적과 주요 경기 리포트를 열람할 수 있습니다.
+		</p>
+		</a>
+
+		<a href="/members/current" class="group p-8 border border-zinc-200 dark:border-zinc-800 rounded-3xl hover:border-emerald-500/50 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-all">
+		<div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">👥</div>
+		<h3 class="font-bold text-xl mb-3">People</h3>
+		<p class="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">
+			로빛을 빛낸 역대 단원들과 현재 활동 중인 19, 20기 지능팀 정보를 확인하세요.
+		</p>
+		</a>
+	</div>
+</DocsLayout>
