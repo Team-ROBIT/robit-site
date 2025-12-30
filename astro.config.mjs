@@ -3,12 +3,16 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
+import mdx from '@astrojs/mdx';
+
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://team-robit.github.io',
-    base: '/robit-site/',
-    
-    vite: {
-    plugins: [tailwindcss()],
-    },
+  site: 'https://team-robit.github.io',
+  base: '/robit-site/',
+
+  vite: {
+  plugins: [tailwindcss()],
+  },
+
+  integrations: [mdx()],
 });

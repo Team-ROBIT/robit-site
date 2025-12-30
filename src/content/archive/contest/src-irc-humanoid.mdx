@@ -1,0 +1,59 @@
+---
+title: "SRCIRC Humanoid"
+sidebar: false
+description: "로봇 스포츠 지능형 하이테크 부문 상세 기록"
+---
+import ContestDetailLayout from '../../../layouts/ContestDetailLayout.astro';
+import heroImg from '../../../assets/assets_contest/team-src-irc.webp';
+import robotImg from '../../../assets/assets_contest/robot-src-humanoid.webp';
+import play1 from '../../../assets/assets_contest/contest-src-humanoid-mission-run.gif';
+import play2 from '../../../assets/assets_contest/contest-src-humanoid-mission-curling.gif';
+import play3 from '../../../assets/assets_contest/contest-src-humanoid-mission-basketball.gif';
+
+<ContestDetailLayout title="SRCIRC Humanoid" heroImage={heroImg}>
+
+## Introduction
+SRCIRC(지능형 로봇 및 국제 로봇 콘테스트)는 대한민국에서 개최되는 대표적인 로봇 대회로, 다양한 로봇 플랫폼과 미션을 통해 참가 팀들의 기술력을 겨루는 자리입니다. 그 중 휴머노이드 로봇 스포츠 부문은 인간과 유사한 형태의 로봇이 다양한 스포츠 미션을 수행하는 것을 목표로 합니다.
+
+## 🤖 Robot
+로봇 플랫폼 및 기술적 특징에 대한 설명입니다.
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-b border-zinc-200 dark:border-zinc-800 pb-12 mb-12">
+    <div class="flex flex-col items-center">
+        <img src={robotImg.src} class="rounded-xl shadow-lg !m-0  w-64 md:w-90 aspect-[3/4] object-cover" alt="참가 로봇" />
+        <p class="text-xs text-zinc-500 mt-2">〈2024 SRCIRC에 참가한 로봇〉</p>
+    </div>
+    <div class="space-y-4">
+        <p class="text-sm leading-relaxed">
+        SRCIRC 휴머노이드 로봇 스포츠 부문은 휴머노이드 플랫폼을 활용해 육상, 농구, 컬링 등 다양한 종목을 수행하는 대회입니다. 비전 및 보행 기술을 기반으로 매번 새로운 하드웨어와 소프트웨어를 개발합니다.
+        </p>
+        <div class="bg-zinc-50 dark:bg-zinc-900 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800">
+        <h4 class="text-blue-600 !mt-0 font-bold tracking-tight text-center">〈2024년도 결과〉</h4>
+        <ul class="text-sm space-y-2 !mb-0 list-none text-center p-0">
+            <li>2024년 SRCIRC 예선 1위</li>
+            <li>2024년 SRCIRC 하이테크 부문 1위</li>
+            <li>2024년 SRCIRC 하이테크 부문 2위</li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+## 🎮 Playing
+각 미션 수행 장면입니다.
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="flex flex-col items-center">
+        <img src={play1.src} class="rounded-lg shadow-md !m-0 aspect-square object-cover" />
+        <p class="text-xs font-bold mt-2 text-zinc-600">〈육상〉</p>
+    </div>
+    <div class="flex flex-col items-center">
+        <img src={play2.src} class="rounded-lg shadow-md !m-0 aspect-square object-cover" />
+        <p class="text-xs font-bold mt-2 text-zinc-600">〈컬링〉</p>
+    </div>
+    <div class="flex flex-col items-center">
+        <img src={play3.src} class="rounded-lg shadow-md !m-0 aspect-square object-cover" />
+        <p class="text-xs font-bold mt-2 text-zinc-600">〈하노이〉</p>
+    </div>
+</div>
+
+</ContestDetailLayout>

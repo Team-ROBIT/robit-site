@@ -1,0 +1,69 @@
+---
+title: "참여 대회"
+description: "로빛이 도전해온 국내외 주요 로봇 대회 목록"
+order: 1
+---
+import ContestCard from '../../../components/ContestCard.astro';
+import imgRobocupSoccer from '../../../assets/assets_contest/contest-robocup-soccer-main.webp';
+import imgRobocupRescue from '../../../assets/assets_contest/contest-robocup-rescue-main.webp';
+import imgIrcHumanoid from '../../../assets/assets_contest/contest-irc-humanoid-main.webp';
+import imgIrcTurtlebot from '../../../assets/assets_contest/contest-irc-turtlebot-main.webp';
+import imgIrcWrestling from '../../../assets/assets_contest/contest-irc-ssireum-main.webp';
+import imgDefense from '../../../assets/assets_contest/contest-defense-main.webp';
+import imgExtreme from '../../../assets/assets_contest/contest-extreme-main.webp';
+import imgEbsBattle from '../../../assets/assets_contest/contest-ebs-battle.webp';
+import imgEbsHumanoid from '../../../assets/assets_contest/contest-ebs-humanoid.webp';
+
+# 🏟 참여 대회
+
+로빛은 창단 이래 다양한 플랫폼을 통해 국내외 유수의 대회에 참가하며 기술적 지평을 넓혀왔습니다.
+대회별 카드를 클릭하여 각 대회의 특징과 로빛의 참여 역사를 확인해보세요.
+
+---
+
+## ⚽ Robocup
+세계 최고의 권위를 자랑하는 로봇 월드컵 시리즈입니다.
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
+  <ContestCard imagePath={imgRobocupSoccer} title="Robocup Soccer" href="/robit-site/contest/robocup-humanoid"/>
+  <ContestCard imagePath={imgRobocupRescue} title="Robocup Rescue" href="/robit-site/contest/robocup-rescue"/>
+</div>
+
+---
+
+## 🤖 SRC & IRC
+국내 최대 규모의 로봇 대회인 지능형 로봇 및 국제 로봇 콘테스트입니다.
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
+  <ContestCard imagePath={imgIrcHumanoid} title="SRC/IRC Humanoid" href="/robit-site/contest/src-irc-humanoid" />
+  <ContestCard imagePath={imgIrcTurtlebot} title="Turtlebot" />
+  <ContestCard imagePath={imgIrcWrestling} title="씨름로봇" />
+</div>
+
+---
+
+## 🎖 국방로봇경진대회
+국방 기술의 미래를 탐구하는 특수 목적 로봇 대회입니다.
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
+  <ContestCard imagePath={imgDefense} title="국방로봇경진대회" />
+</div>
+
+---
+
+## 🌋 극한로봇경진대회
+재난 및 극한 상황에서의 로봇 운용 능력을 평가합니다.
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
+  <ContestCard imagePath={imgExtreme} title="극한로봇경진대회" />
+</div>
+
+---
+
+## 📺 EBS Robot Power
+로봇의 대중화를 이끌었던 대한민국 로봇 예능의 전설입니다.
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
+  <ContestCard imagePath={imgEbsBattle} title="배틀로봇" />
+  <ContestCard imagePath={imgEbsHumanoid} title="휴머노이드" />
+</div>

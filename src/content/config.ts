@@ -9,6 +9,7 @@ const archiveCollection = defineCollection({
         order: z.number().default(0),
         // 나중에 특정 폴더에서만 쓸 필드는 .optional()로 추가하면 됩니다.
         image: z.string().optional(), 
+        sidebar: z.boolean().optional(),
     }),
 });
 

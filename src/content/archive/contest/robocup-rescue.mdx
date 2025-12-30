@@ -1,0 +1,181 @@
+---
+title: "Robocup Rescue"
+sidebar: false
+description: "로봇 스포츠 지능형 하이테크 부문 상세 기록"
+---
+import ContestDetailLayout from '../../../layouts/ContestDetailLayout.astro';
+import heroImg from '../../../assets/assets_contest/team-robocup-rescue.webp';
+import robotImg1 from '../../../assets/assets_contest/robot-robocup-rescue-2021.webp';
+import robotImg2 from '../../../assets/assets_contest/robot-robocup-rescue-2022.webp';
+import robotImg3 from '../../../assets/assets_contest/robot-robocup-rescue-2024.webp';
+import techGif1 from '../../../assets/assets_contest/contest-robocup-rescue-tech-1.gif';
+import techGif2 from '../../../assets/assets_contest/contest-robocup-rescue-tech-2.gif';
+import techGif3 from '../../../assets/assets_contest/contest-robocup-rescue-tech-3.gif';
+import techGif4 from '../../../assets/assets_contest/contest-robocup-rescue-tech-4.gif';
+import techGif5 from '../../../assets/assets_contest/contest-robocup-rescue-tech-5.gif';
+import techGif6 from '../../../assets/assets_contest/contest-robocup-rescue-tech-6.gif';
+import techGif7 from '../../../assets/assets_contest/contest-robocup-rescue-tech-7.gif';
+import techGif8 from '../../../assets/assets_contest/contest-robocup-rescue-tech-8.gif';
+import techGif9 from '../../../assets/assets_contest/contest-robocup-rescue-tech-9.gif';
+import techGif10 from '../../../assets/assets_contest/contest-robocup-rescue-tech-10.gif';
+
+<ContestDetailLayout title="Robocup Rescue" heroImage={heroImg}>
+
+## Introduction
+RoboCup Rescue는 재난 환경에서 수색과 구조 임무를 수행할 수 있는 지능형 로봇을 개발하고 평가하는 대회입니다.
+피해자 수색, 장애물 극복, 물체 인식, 경로 계획 등에서 로봇의 성능과 자율성을 입증해야 하며, 다중 로봇 협력과 오퍼레이터와의 통신 능력도 평가됩니다. 이 대회는 재난 대응에 실질적으로 적용 가능한 로봇 기술을 발전시키는 것을 목표로 합니다.
+
+
+## 🤖 Robot
+로봇 플랫폼 및 기술적 특징에 대한 설명입니다.
+
+{/* 4개의 로봇을 가로로 배치하는 그리드 컨테이너 */}
+{/* 반응형 설정: 모바일(1열) -> 태블릿/작은PC(2열) -> 대형화면(3열) */}
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start border-b border-zinc-200 dark:border-zinc-800 pb-12 mb-12">
+    
+    {/* 로봇 1 */}
+    <div class="flex flex-col items-center">
+        {/* 이미지 너비를 고정(w-64 등)하기보다 w-full로 설정하여 그리드 칸에 맞춤 */}
+        <img 
+            src={robotImg1.src} 
+            class="rounded-xl shadow-lg !m-0 w-full aspect-square object-cover" 
+            alt="참가 로봇 1" 
+        />
+        <p class="text-xs text-zinc-500 mt-3 text-center">〈2021 | Scue〉</p>
+    </div>
+
+    {/* 로봇 2 (여기에 실제 이미지 변수와 설명을 넣으세요) */}
+    <div class="flex flex-col items-center">
+        <img 
+            src={robotImg2.src}
+            class="rounded-xl shadow-lg !m-0 w-full aspect-square object-cover" 
+            alt="참가 로봇 2" 
+        />
+        <p class="text-xs text-zinc-500 mt-3 text-center">〈2022 | KUBO〉</p>
+    </div>
+
+    {/* 로봇 3 */}
+    <div class="flex flex-col items-center">
+        <img 
+            src={robotImg3.src} 
+            class="rounded-xl shadow-lg !m-0 w-full aspect-square object-cover" 
+            alt="참가 로봇 3" 
+        />
+        <p class="text-xs text-zinc-500 mt-3 text-center">〈2024 | KULS〉</p>
+    </div>
+
+</div>
+
+## 💻 Technology
+4개의 플리퍼를 사용하여 계단 뿐만 아니라 다양한 지형을 돌파할 수 있습니다.
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+    {/* 왼쪽: 미션 수행 GIF */}
+    <div class="flex flex-col items-center">
+        <img src={techGif1.src} class="rounded-xl shadow-lg !m-0 w-full object-cover" alt="기술 미션" />
+        <p class="text-xs text-zinc-500 mt-3 italic">〈2021 로봇 기술〉</p>
+    </div>
+    
+    {/* 왼쪽: 미션 수행 GIF */}
+    <div class="flex flex-col items-center">
+        <img src={techGif2.src} class="rounded-xl shadow-lg !m-0 w-full object-cover" alt="기술 미션" />
+        <p class="text-xs text-zinc-500 mt-3 italic">〈20xx 로봇 기술〉</p>
+    </div>
+    
+    <div class="flex flex-col items-center">
+        <img src={techGif3.src} class="rounded-xl shadow-lg !m-0 w-full object-cover" alt="기술 미션" />
+        <p class="text-xs text-zinc-500 mt-3 italic">〈Qualifications〉</p>
+    </div>
+</div>
+
+이미지 처리 기술을 통해 색상, 패턴, 동작 인식 등을 수행할 수 있습니다.
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="flex flex-col items-center">
+        <img src={techGif4.src} class="rounded-xl shadow-lg !m-0 w-full object-cover" alt="기술 미션" />
+        <p class="text-xs text-zinc-500 mt-3 italic">〈Qualifications〉</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+        <img src={techGif5.src} class="rounded-xl shadow-lg !m-0 w-full object-cover" alt="기술 미션" />
+        <p class="text-xs text-zinc-500 mt-3 italic">〈Qualifications〉</p>
+    </div>
+</div>
+
+매니퓰레이터를 이용하여 물체를 들고, 옮기고, 작은 구멍에 넣는 등 다양한 미션을 수행할 수 있습니다.
+
+{/* 비디오/GIF 갤러리 섹션 */}
+<div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-6 my-12">
+    
+    {/* 1. 왼쪽: 세로로 긴 영상 (2행 점유) */}
+    <div class="md:row-span-3 flex flex-col">
+        <div class="relative h-full overflow-hidden rounded-2xl shadow-lg bg-zinc-100 dark:bg-zinc-900">
+            <img 
+                src={techGif6.src} 
+                class="w-full h-full object-cover !m-0" 
+                alt="미션 영상 1" 
+            />
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
+                <p class="text-xs font-bold text-white text-center">〈Dexterity 미션 수행 1〉</p>
+            </div>
+        </div>
+    </div>
+
+    {/* 2. 오른쪽 상단: 가로 영상 1 */}
+    <div class="flex flex-col">
+        <div class="relative aspect-video overflow-hidden rounded-2xl shadow-md bg-zinc-100 dark:bg-zinc-900">
+            <img 
+                src={techGif7.src} 
+                class="w-full h-full object-cover !m-0" 
+                alt="미션 영상 2" 
+            />
+            <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
+                <p class="text-[10px] font-bold text-white text-center">〈Dexterity 미션 수행 2〉</p>
+            </div>
+        </div>
+    </div>
+
+    {/* 3. 오른쪽 하단: 가로 영상 2 */}
+    <div class="flex flex-col">
+        <div class="relative aspect-video overflow-hidden rounded-2xl shadow-md bg-zinc-100 dark:bg-zinc-900">
+            <img 
+                src={techGif8.src} 
+                class="w-full h-full object-cover !m-0" 
+                alt="미션 연습 1" 
+            />
+            <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
+                <p class="text-[10px] font-bold text-white text-center">〈Dexterity 미션 연습 1〉</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col">
+        <div class="relative aspect-video overflow-hidden rounded-2xl shadow-md bg-zinc-100 dark:bg-zinc-900">
+            <img 
+                src={techGif9.src} 
+                class="w-full h-full object-cover !m-0" 
+                alt="미션 연습 2" 
+            />
+            <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
+                <p class="text-[10px] font-bold text-white text-center">〈Dexterity 미션 연습 2〉</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+IMU와 LiDAR를 이용하여 localization을 진행하고 map을 생성할 수 있습니다.
+<div class="relative aspect-video overflow-hidden rounded-2xl shadow-md bg-zinc-100 dark:bg-zinc-900">
+    <img 
+        src={techGif10.src} 
+        class="w-full h-full object-cover !m-0" 
+        alt="매핑 기술" 
+    />
+    <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
+        <p class="text-[10px] font-bold text-white text-center">〈매핑 기술〉</p>
+    </div>
+</div>
+
+
+
+</ContestDetailLayout>
