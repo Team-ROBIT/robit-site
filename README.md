@@ -1,4 +1,3 @@
-markdown
 # 🤖 ROːBIT Archive Project
 광운대학교 로봇게임단 로빛(ROːBIT)의 활동 기록 및 기술 자산을 보존하기 위한 새로운 아카이브 사이트입니다.  
 기존 Google Sites를 유지하며, 본 사이트는 **GitHub Organization Pages**를 통해 호스팅됩니다.
